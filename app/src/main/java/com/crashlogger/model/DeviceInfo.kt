@@ -1,0 +1,22 @@
+package com.crashlogger.model
+
+data class DeviceInfo(val versionName: String,
+                      val packageName: String,
+                      val filePath: String,
+                      val phoneModel: String,
+                      val androidVersion: String,
+                      val board: String,
+                      val brand: String,
+                      val device: String,
+                      val display: String,
+                      val fingerPrint: String,
+                      val host: String,
+                      val ID: String,
+                      val manufacturer: String,
+                      val model: String,
+                      val product: String,
+                      val tags: String,
+                      val time: Long,
+                      val type: String,
+                      val sdkInfo: Int,
+                      val user: String)
