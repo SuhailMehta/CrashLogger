@@ -1,0 +1,2 @@
+# CrashLogger
+Logs Application log
