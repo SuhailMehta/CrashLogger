@@ -1,4 +1,4 @@
-package com.crashlogger
+package com.crashlogger.android
 
 import android.content.Context
 import android.content.pm.PackageInfo
@@ -7,7 +7,7 @@ import android.os.Build
 import android.os.Environment
 import android.os.StatFs
 import android.util.Log
-import com.crashlogger.model.DeviceInfo
+import com.crashlogger.android.model.DeviceInfo
 import java.io.PrintWriter
 import java.io.StringWriter
 import java.util.*
@@ -217,9 +217,9 @@ class CrashLogger private constructor(private val context: Context) : Thread.Unc
 
         // find the cause of the crash
         while (cause != null) {
-            cause!!.printStackTrace(printWriter)
+            cause.printStackTrace(printWriter)
             report += result.toString()
-            cause = cause!!.cause
+            cause = cause.cause
         }
 
         printWriter.close()

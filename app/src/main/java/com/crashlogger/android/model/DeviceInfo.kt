@@ -1,4 +1,4 @@
-package com.crashlogger.model
+package com.crashlogger.android.model
 
 data class DeviceInfo(val versionName: String,
                       val packageName: String,
