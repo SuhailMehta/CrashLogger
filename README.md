@@ -2,6 +2,12 @@
 
 Crash Logger is android project designed to log crash report of the application which run across all versions of Android. When an application crashes log report is generated with device info.
 
+Installation:-
+
+```gradle
+implementation 'com.crashlogger.android:app:1.0.0'
+```
+
 How to use this:-
 -----------------------
 Add CrashLogger in Application
